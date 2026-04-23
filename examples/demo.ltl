@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_imap_list
+
+import std::io
+use ltl_imap_list as lib
+
+fn main() {
+    io::println("ltl_imap_list demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
